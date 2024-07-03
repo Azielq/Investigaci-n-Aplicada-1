@@ -1,0 +1,152 @@
+﻿Universidad Latinoamericana de Ciencia y Tecnología
+Facultad de Ingeniería - Ingeniería Informática
+
+
+CURSO: 2CO24-169031G1 ESTRUCTURA DE DATOS
+
+
+Investigación Aplicada: Pilas, colas y listas en Python
+ 
+Autores:
+Aziel Quesada Cordero
+Fabián Zúñiga Brenes
+Gustavo Adolfo Camacho Vargas
+Michael Tenorio Figueroa
+
+
+Profesor:
+Jorge Bastos García
+   
+II Cuatrimestre, 2024
+   
+3 de julio del 2024
+Descripción del Software
+Nombre y versión: El programa se llama “Python-Structures”, Se utiliza la versión 3.12.4
+
+
+Descripción de las Clases
+1. Clase Node:
+   * Atributos:
+      * data: Almacena el valor del nodo.
+      * next: Apunta al siguiente nodo en la estructura.
+   * Método Constructor:
+      * Inicializa data y next.
+2. Clase Pila:
+   * Atributos:
+      * top: Apunta al nodo en la parte superior de la pila.
+   * Métodos:
+      * isEmpty(): Verifica si la pila está vacía.
+      * push(data): Añade un nodo con data a la parte superior de la pila.
+      * pop(): Elimina y devuelve el nodo en la parte superior de la pila.
+      * peek(): Devuelve el valor del nodo en la parte superior de la pila sin eliminarlo.
+      * size(): Devuelve el número de nodos en la pila.
+3. Clase Cola:
+   * Atributos:
+      * front: Apunta al primer nodo de la cola.
+      * rear: Apunta al último nodo de la cola.
+   * Métodos:
+      * isEmpty(): Verifica si la cola está vacía.
+      * enqueue(data): Añade un nodo con data al final de la cola.
+      * dequeue(): Elimina y devuelve el primer nodo de la cola.
+      * size(): Devuelve el número de nodos en la cola.
+4. Clase Lista:
+   * Atributos:
+      * head: Apunta al primer nodo de la lista.
+   * Métodos:
+      * add(data): Añade un nodo con data al inicio de la lista.
+      * size(): Devuelve el número de nodos en la lista.
+      * display(): Devuelve una lista con los valores de todos los nodos en la lista.
+
+
+Detalle  de  Características
+Funcionalidad del Programa
+El programa ofrece una interfaz de usuario basada en la línea de comandos que permite al usuario interactuar con las estructuras de datos implementadas. El menú principal ofrece tres opciones: trabajar con pilas, colas o listas.
+Menú Principal
+1. Pilas:
+   * Permite al usuario crear una pila, agregar elementos, visualizar el elemento en la parte superior, obtener el tamaño de la pila y eliminar el último elemento.
+2. Flujo de trabajo:
+   * Verifica si la pila está vacía.
+   * Añade tres elementos proporcionados por el usuario.
+   * Muestra el elemento en la parte superior de la pila.
+   * Muestra el tamaño de la pila.
+   * Elimina y muestra el último elemento agregado a la pila.
+3. Colas:
+   * Permite al usuario crear una cola, agregar elementos, visualizar y eliminar elementos en el orden en que fueron agregados, obtener el tamaño de la cola.
+4. Flujo de trabajo:
+   * Verifica si la cola está vacía.
+   * Añade tres elementos proporcionados por el usuario.
+   * Muestra y elimina los elementos en el orden en que fueron agregados.
+   * Muestra el tamaño de la cola.
+5. Listas:
+   * Permite al usuario crear una lista, agregar elementos y mostrar el contenido de la lista y luego tiene la opción de eliminar todos los datos de la lista.
+6. Flujo de trabajo:
+   * Añade tres elementos proporcionados por el usuario.
+   * Muestra la lista completa de elementos.
+Ejecución del Programa
+El programa utiliza un bucle while para mostrar el menú principal de forma continua hasta que el usuario elija salir (0 para salir). Cada opción seleccionada por el usuario permite realizar operaciones específicas sobre la estructura de datos correspondiente, interactuando mediante entradas y salidas en la línea de comandos.
+Esta implementación con nodos y punteros proporciona una forma más tradicional y fundamental de manejar estructuras de datos, permitiendo una comprensión más profunda de su funcionamiento interno en comparación con el uso directo de listas de Python.
+        
+________________
+
+
+Imagen de la Pantalla Principal del Programa   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ventajas del Programa
+Al crear este programa en Python, se da una facilidad inherente en su funcionamiento, ya que este lenguaje es considerado fácil de aprender, y además cuenta con sintaxis clara y concisa.  Además, este lenguaje, al ser de alto nivel, ayuda a la simplicidad concreta en los programas finales. Otro beneficio alto que trae Python, es que uno puede ir probando el programa mientras lo va creando uno, llevando a un tiempo total de desarrollo, en promedio, menor.
+Inicialmente, las listas traen una ventaja principal que es la flexibilidad, se pueden almacenar diferentes tipos de datos, y hasta se puede cambiar dinámicamente el tamaño de esta. Las listas, además, se separan de las otras maneras de almacenar datos, porque dejan el acceso aleatorio a los datos, ya que no solo se puede acceder al primer o último dato, sino a cualquiera de los que se encuentren en la lista.
+Por otro lado, las filas cumplen un método de acceso natural, donde es FIFO (First in, First Out). Al este dejar que el primero en llegar sea el primero en salir, lleva a que sea el método usado por excelencia en nuestro mundo real.  Cuando se utilizan filas en programación, uno se asegura esto mismo, que se le da prioridad al primer ítem de la fila, y prohíbe el acceso a cualquier otro ítem.
+Finalmente, están las pilas, estas tienen el aspecto que contienen una metodología dándole prioridad inmediata a cualquier ítem que llega, lo que se conoce como LIFO (Last in, First out). Esto lleva a que sea un método también usado constantemente en la vida cotidiana, con ejemplos como la lista de platos sucios o una pila de libros.
+
+
+Desventajas del Programa
+Como ya se mencionó previamente, Python es un lenguaje de alto nivel, esto puede ser beneficioso en varios aspectos, pero esto lleva a que traiga problemas en varios otros aspectos.
+Al estar programado en Python, este lleva a que no tenga un rendimiento tan óptimo como si fuese desarrollado en lenguajes compilados, como lo serían C o C + +. 
+Además, la gestión automática de memoria en Python, puede llevar a un mayor consumo de memoria en comparación a lenguajes que permitan la gestión granular de recursos. 
+Las listas tienen un problema de complejidad temporal, al dejar que se pueda dar acceso a cualquier parte de esta, se convierte en que una actividad tome más tiempo de realizar comparada con las demás. Llevando a que a pesar de que en las filas se pueden usar cualquiera de las funciones de los otros sistemas de almacenamiento, los otros sean más óptimos cuando solo se requieren las funciones con las que cuentan.
+Las filas tienen un problema que viene directamente con su concepto, solo se puede acceder a inserciones al final, y la eliminación al frente de la fila. Además, esto lleva a que si por alguna razón, uno necesita acceder a un elemento en la mitad de la fila, se debe transferir los contenidos previos a él antes de poder acceder a la data requerida.
+Las pilas traen una versatilidad muy limitada, llevando a que sean principalmente usadas en aplicaciones más simples. Además, tienen funciones limitadas, solo se puede visualizar si está vacía o no, y en caso de que no esté, solo se conoce el ítem que está arriba.
+
+
+
+
+
+
+
+
+
+
+
+
+Link de Descarga o Acceso
+https://github.com/Azielq/Investigaci-n-Aplicada-1
+
+
+Imagen de la Página de Descarga   
+________________
+Mejoras al Software
+* Manejo de errores: Se podría agregar control de errores para entradas inválidas( por ejemplo, números cuando se espera texto)
+* Validación de entrada: Para verificar que los datos ingresados sean correctos(por ejemplo, no permitir cadenas vacías) 
+* Consistencia en la interfaz: Para verificar Usar el  mismo estilo en todos los mensajes al usuario(mayúsculas o minúsculas)
+* Modularización: Separar el código de las estructuras de datos de la interfaz para que sea más  fácil de entender.
+* Mejorar la visualización: Hacer que  la lista de elementos sea más clara( por ejemplo, enumerandolos)
+________________
+Referencias Bibliográficas
+Bastos García, J. (s.f.). ESTRUCTURA DE DATOS [Presentación de Teams]. Universidad Latinoamericana de Ciencia y Tecnología.
+Python Software Foundation. (2024). Data Structures — Python 3.12.4 documentation. https://docs.python.org/3/tutorial/datastructures.html
